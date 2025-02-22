@@ -1,6 +1,4 @@
 #! /bin/sh
-#
-# $Id: autogen.sh,v 1.16 2009-11-15 20:00:56 al-guest Exp $
 
 set -x
 

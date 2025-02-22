@@ -59,8 +59,6 @@
  * ecvt, fcvt and gcvt.
  */
 
-/* From: Id: sprint.c,v 1.5 1995/09/10 18:35:09 chuck Exp */
-
 #include <config.h>
 
 #ifndef HAVE_STDARG_H

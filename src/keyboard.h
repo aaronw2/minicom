@@ -1,8 +1,6 @@
 /*
  * keyboard.h	Constants to talk to the keyboard driver.
  *
- * 		$Id: keyboard.h,v 1.3 2008-08-02 20:27:07 al-guest Exp $
- *
  *		This file is part of the minicom communications package,
  *		Copyright 1991-1995 Miquel van Smoorenburg.
  *

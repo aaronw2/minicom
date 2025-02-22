@@ -5,8 +5,6 @@
  *		included. This file is only included from sysdep[12].c
  *		anyway!
  *
- *		$Id: sysdep.h,v 1.6 2008-03-21 20:27:56 al-guest Exp $
- *
  *		This file is part of the minicom communications package,
  *		Copyright 1991-1995 Miquel van Smoorenburg.
  *

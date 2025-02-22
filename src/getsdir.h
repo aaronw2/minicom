@@ -5,8 +5,6 @@
  *	Datatypes and constants for getsdir() - a function to get and
  *	return a sorted directory listing.
  *
- *	$Id: getsdir.h,v 1.4 2007-10-10 20:18:20 al-guest Exp $
- *
  *	Copyright (c) 1998 by James S. Seymour (jseymour@jimsun.LinxNet.com)
  *
  *	This code is free software; you can redistribute it and/or

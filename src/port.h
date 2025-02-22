@@ -4,8 +4,6 @@
  *		not application dependent. It maybe a bit of overhead
  *		but simplifies porting greatly.
  *
- *		$Id: port.h,v 1.10 2009-06-06 18:50:42 al-guest Exp $
- *
  *		This file is part of the minicom communications package,
  *		Copyright 1991-1995 Miquel van Smoorenburg.
  *

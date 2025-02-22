@@ -1,6 +1,5 @@
 /* Declaration for error-reporting function
-   $Id: error.h,v 1.1.1.1 2003-03-30 18:55:40 al-guest Exp $
-  
+
    Copyright (C) 1995, 1996, 1997 Free Software Foundation, Inc.
 
    This file is part of the GNU C Library.  Its master source is NOT part of

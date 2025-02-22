@@ -1,8 +1,6 @@
 /*
  * window.h	Constants, prototypes etc. for the window routines.
  *
- *		$Id: window.h,v 1.16 2007-10-10 20:18:20 al-guest Exp $
- *
  *		This file is part of the minicom communications package,
  *		Copyright 1991-1996 Miquel van Smoorenburg.
  *

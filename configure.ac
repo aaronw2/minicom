@@ -1,4 +1,3 @@
-dnl $Id: configure.in,v 1.52 2009-11-16 21:06:05 al-guest Exp $
 dnl configure.in autoconf/automake input script
 dnl for minicom
 dnl

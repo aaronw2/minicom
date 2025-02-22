@@ -1,8 +1,6 @@
 /*
  * vt100.h	Header file for the vt100 emulator.
  *
- *		$Id: vt100.h,v 1.4 2007-10-10 20:18:20 al-guest Exp $
- *
  *		This file is part of the minicom communications package,
  *		Copyright 1991-1995 Miquel van Smoorenburg.
  *

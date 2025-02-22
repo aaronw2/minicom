@@ -1,8 +1,6 @@
 /*
  * minicom.h	Constants, defaults, globals etc.
  *
- *		$Id: minicom.h,v 1.26 2009-06-06 21:19:36 al-guest Exp $
- *
  *		This file is part of the minicom communications package,
  *		Copyright 1991-1995 Miquel van Smoorenburg.
  *

@@ -4,8 +4,6 @@
 # xminicom	Run minicom in an xterm. This script looks for
 #		color_xterm, rxvt and xterm (in that order) and
 #		starts it up with minicom inside it.
-#
-# version	$Id: xminicom,v 1.4 2008-06-09 20:48:35 al-guest Exp $
 
 findcmd()
 {

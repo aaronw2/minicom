@@ -1,5 +1,3 @@
-/* $Id: intl.h,v 1.2 2007-01-07 15:47:14 al-guest Exp $ */
-
 #ifdef HAVE_LOCALE_H
 # include <locale.h>
 #endif

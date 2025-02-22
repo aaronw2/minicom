@@ -1,5 +1,3 @@
-/* $Id: libport.h,v 1.1.1.1 2003-03-30 18:55:40 al-guest Exp $ */
-
 #ifndef H_LIBPORT
 #define H_LIBPORT
 
