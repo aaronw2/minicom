@@ -43,52 +43,48 @@ int read_buf(int fd, char *buf, int bufsize)
 static int check_io(int fd1, int fd2, int tmout, char *buf,
                     int bufsize, int *bytes_read)
 {
-  int n = 0, i;
   struct timeval tv;
   fd_set fds;
+  FD_ZERO(&fds);
 
-  tv.tv_sec = tmout / 1000;
+  tv.tv_sec  = tmout / 1000;
   tv.tv_usec = (tmout % 1000) * 1000L;
 
-  i = fd1;
+  int max_fd = fd1;
   if (fd2 > fd1)
-    i = fd2;
+    max_fd = fd2;
 
-  FD_ZERO(&fds);
   if (fd1 >= 0)
     FD_SET(fd1, &fds);
+
   if (fd2 >= 0)
     FD_SET(fd2, &fds);
-  else
-    fd2 = 0;
 
-  if (fd2 == 0 && io_pending)
-    n = 2;
-  else if (select(i + 1, &fds, NULL, NULL, &tv) > 0)
-    n = 1 * (fd1 >= 0 && FD_ISSET(fd1, &fds) > 0) + 2 * (FD_ISSET(fd2, &fds) > 0);
+  int ret = 0;
+  if (fd2 == STDIN_FILENO && io_pending)
+    ret = 2;
+  else if (select(max_fd + 1, &fds, NULL, NULL, &tv) > 0)
+    {
+      ret =   1 * (fd1 >= 0 && FD_ISSET(fd1, &fds) != 0)
+            + 2 * (fd2 >= 0 && FD_ISSET(fd2, &fds) != 0);
 
-  /* If there is data put it in the buffer. */
-  if (buf) {
-    if ((n & 1) == 1)
-      i = read_buf(fd1, buf, bufsize);
-    else
-      i = 0;
+      /* If there is data put it in the buffer. */
+      if (buf && bytes_read && (ret & 1))
+        *bytes_read = read_buf(fd1, buf, bufsize);
+    }
 
-    if (bytes_read)
-      *bytes_read = i;
-  }
-
-  return n;
+  return ret;
 }
 
 int check_io_frontend(char *buf, int buf_size, int *bytes_read)
 {
-  return check_io(portfd_connected(), 0, 1000, buf, buf_size, bytes_read);
+  return check_io(portfd_connected(), STDIN_FILENO, 1000,
+                  buf, buf_size, bytes_read);
 }
 
 bool check_io_input(int timeout_ms)
 {
-  return check_io(-1, 0, timeout_ms, NULL, 0, NULL) & 2;
+  return check_io(-1, STDIN_FILENO, timeout_ms, NULL, 0, NULL) & 2;
 }
 
 int keyboard(int cmd, int arg)
