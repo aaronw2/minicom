@@ -408,10 +408,7 @@ nolock:
     if (portfd_is_socket)
       term_socket_connect();
     else
-      {
-        if (device_open())
-	  return -1;
-      }
+      device_open();
 
     if (portfd >= 0) {
       if (doinit > 0)
