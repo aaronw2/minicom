@@ -368,8 +368,6 @@ void device_close()
  */
 int open_term(int doinit, int show_win_on_error, int no_msgs)
 {
-  int s_errno;
-
   portfd_is_socket = portfd_is_connected = 0;
   size_t ulen = strlen(SOCKET_PREFIX_UNIX);
   assert(ulen == strlen(SOCKET_PREFIX_UNIX_LEGACY));
@@ -422,7 +420,8 @@ nolock:
       m_savestate(portfd);
     port_init();
   }
-  s_errno = errno;
+
+  int s_errno = errno;
   alarm(0);
   signal(SIGALRM, SIG_IGN);
   if (portfd < 0 && portfd_is_socket == Socket_type_no_socket) {
