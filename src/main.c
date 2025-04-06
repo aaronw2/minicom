@@ -405,16 +405,22 @@ nolock:
     portfd = -1;
     signal(SIGALRM, get_alrm);
     alarm(20);
+
     if (portfd_is_socket)
       term_socket_connect();
     else
       device_open();
 
-    if (portfd >= 0) {
-      if (doinit > 0)
-        m_savestate(portfd);
-      port_init();
-    }
+    if (portfd < 0)
+      {
+        fprintf(stderr, _("minicom: cannot open %s: %s\n"),
+                        dial_tty, strerror(errno)); // errno retained from callers
+        return -1;
+      }
+
+    if (doinit > 0)
+      m_savestate(portfd);
+    port_init();
   }
   s_errno = errno;
   alarm(0);
