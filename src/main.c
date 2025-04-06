@@ -388,15 +388,15 @@ int open_term(int doinit, int show_win_on_error, int no_msgs)
 
 nolock:
   /* Run a special program to disable callin if needed. */
-    if (doinit > 0 && P_CALLOUT[0]) {
-      if (fastsystem(P_CALLOUT, NULL, NULL, NULL) < 0) {
-        if (stdwin)
-          mc_wclose(stdwin, 1);
-        fprintf(stderr, _("Could not setup for dial out.\n"));
-	lockfile_remove();
-        return -1;
-      }
+  if (doinit > 0 && P_CALLOUT[0]) {
+    if (fastsystem(P_CALLOUT, NULL, NULL, NULL) < 0) {
+      if (stdwin)
+        mc_wclose(stdwin, 1);
+      fprintf(stderr, _("Could not setup for dial out.\n"));
+      lockfile_remove();
+      return -1;
     }
+  }
 
   /* Now open the tty device. */
   if (setjmp(albuf) == 0) {
