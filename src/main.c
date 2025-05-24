@@ -411,8 +411,9 @@ nolock:
 
     if (portfd < 0)
       {
-        fprintf(stderr, _("minicom: cannot open %s: %s\n"),
-                        dial_tty, strerror(errno)); // errno retained from callers
+	if (!no_msgs)
+          fprintf(stderr, _("minicom: cannot open %s: %s\n"),
+                          dial_tty, strerror(errno)); // errno retained from callers
         return -1;
       }
 
