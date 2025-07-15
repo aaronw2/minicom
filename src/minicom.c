@@ -871,7 +871,7 @@ static void helpthem(void)
   printf(_(
     "The configuration directory for the access file and the configurations\n"
     "is compiled to %s.\n\n"
-    "Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"), CONFDIR);
+    "Report bugs to <minicom-devel@alioth-lists.debian.net>.\n"), CONFDIR);
 }
 
 void set_addlf(int val)

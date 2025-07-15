@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.7.1\n"
-"Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
+"Report-Msgid-Bugs-To: minicom-devel@alioth-lists.debian.net\n"
 "POT-Creation-Date: 2021-12-11 20:36+0100\n"
 "PO-Revision-Date: 2018-11-03 08:19+0700\n"
 "Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
@@ -1486,12 +1486,12 @@ msgid ""
 "The configuration directory for the access file and the configurations\n"
 "is compiled to %s.\n"
 "\n"
-"Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
+"Report bugs to <minicom-devel@alioth-lists.debian.net>.\n"
 msgstr ""
 "Thư mục cấu hình cho tập tin truy cập và các cấu hình được biên dịch thành "
 "%s\n"
 "\n"
-"Hãy thông báo lỗi cho địa chỉ “minicom-devel@lists.alioth.debian.org”.\n"
+"Hãy thông báo lỗi cho địa chỉ “minicom-devel@alioth-lists.debian.net”.\n"
 
 #: src/minicom.c:1037
 #, c-format

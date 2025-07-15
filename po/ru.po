@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.3-rc1\n"
-"Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
+"Report-Msgid-Bugs-To: minicom-devel@alioth-lists.debian.net\n"
 "POT-Creation-Date: 2021-12-11 20:36+0100\n"
 "PO-Revision-Date: 2008-01-21 21:26+0200\n"
 "Last-Translator: Pavel Maryanov <acid_jack@ukr.net>\n"
@@ -1488,11 +1488,11 @@ msgid ""
 "The configuration directory for the access file and the configurations\n"
 "is compiled to %s.\n"
 "\n"
-"Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
+"Report bugs to <minicom-devel@alioth-lists.debian.net>.\n"
 msgstr ""
 "Каталог конфигурации для файла доступа и настроек скомпилирован в %s.\n"
 "\n"
-"Сообщайте об ошибках в <minicom-devel@lists.alioth.debian.org>.\n"
+"Сообщайте об ошибках в <minicom-devel@alioth-lists.debian.net>.\n"
 
 #: src/minicom.c:1037
 #, c-format

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.9-rc1\n"
-"Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
+"Report-Msgid-Bugs-To: minicom-devel@alioth-lists.debian.net\n"
 "POT-Creation-Date: 2023-05-18 10:45+0200\n"
 "PO-Revision-Date: 2023-05-23 04:17+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
@@ -1462,11 +1462,11 @@ msgid ""
 "The configuration directory for the access file and the configurations\n"
 "is compiled to %s.\n"
 "\n"
-"Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
+"Report bugs to <minicom-devel@alioth-lists.debian.net>.\n"
 msgstr ""
 "접근 파일의 설정 디렉터리 및 설정은 %s(으)로 컴파일했습니다.\n"
 "\n"
-"<minicom-devel@lists.alioth.debian.org>에 버그를 보고하십시오.\n"
+"<minicom-devel@alioth-lists.debian.net>에 버그를 보고하십시오.\n"
 
 #: src/minicom.c:987
 #, c-format

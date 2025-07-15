@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.6.1.90\n"
-"Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
+"Report-Msgid-Bugs-To: minicom-devel@alioth-lists.debian.net\n"
 "POT-Creation-Date: 2021-12-11 20:36+0100\n"
 "PO-Revision-Date: 2016-02-17 00:03-0500\n"
 "Last-Translator: Mingye Wang (Arthur2e5) <arthur200126@gmail.com>\n"
@@ -1478,12 +1478,12 @@ msgid ""
 "The configuration directory for the access file and the configurations\n"
 "is compiled to %s.\n"
 "\n"
-"Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
+"Report bugs to <minicom-devel@alioth-lists.debian.net>.\n"
 msgstr ""
 "用于访问文件和配置的配置目录\n"
 "己被编译到 %s。\n"
 "\n"
-"错误通报给 <minicom-devel@lists.alioth.debian.org>。\n"
+"错误通报给 <minicom-devel@alioth-lists.debian.net>。\n"
 
 #: src/minicom.c:1037
 #, c-format
