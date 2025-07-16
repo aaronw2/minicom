@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: minicom 2.9-rc1\n"
-"Report-Msgid-Bugs-To: minicom-devel@lists.alioth.debian.org\n"
+"Report-Msgid-Bugs-To: minicom-devel@alioth-lists.debian.net\n"
 "POT-Creation-Date: 2023-05-18 10:45+0200\n"
 "PO-Revision-Date: 2023-05-22 10:15+0200\n"
 "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
@@ -1456,12 +1456,12 @@ msgid ""
 "The configuration directory for the access file and the configurations\n"
 "is compiled to %s.\n"
 "\n"
-"Report bugs to <minicom-devel@lists.alioth.debian.org>.\n"
+"Report bugs to <minicom-devel@alioth-lists.debian.net>.\n"
 msgstr ""
 "Katalog konfiguracji dla pliku dostępu i konfiguracji ustalony na etapie\n"
 "kompilacji to %s.\n"
 "\n"
-"Błędy proszę zgłaszać na adres <minicom-devel@lists.alioth.debian.org>.\n"
+"Błędy proszę zgłaszać na adres <minicom-devel@alioth-lists.debian.net>.\n"
 
 #: src/minicom.c:987
 #, c-format
