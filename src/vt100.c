@@ -87,10 +87,10 @@ static struct escseq vt_keys[] = {
  * to default to no conversion.    jl 04.09.1997
  */
 
-unsigned char vt_inmap[256] = {
+unsigned char vt_inmap[256] __attribute__((nonstring)) = {
 #include "defmap.h"
 };
-unsigned char vt_outmap[256] = {
+unsigned char vt_outmap[256] __attribute__((nonstring)) = {
 #include "defmap.h"
 };
 
