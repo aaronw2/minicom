@@ -1,17 +1,14 @@
 Summary:	TTY mode communications package ala Telix
-Summary(de):	TTY-Modus-Kommunikationspaket (ähnlich Telix)
+Summary(de):	TTY-Modus-Kommunikationspaket (Ã¤hnlich Telix)
 Summary(fi):	Tietoliikenneohjelma, kuten Telix
-Summary(fr):	Package de communication en mode terminal à la Telix
+Summary(fr):	Package de communication en mode terminal Ã  la Telix
 Summary(pl):	Program komunikacyjny (podobny do Telix-a)
-Summary(tr):	Telix benzeri, TTY kipi iletiþim paketi
+Summary(tr):	Telix benzeri, TTY kipi iletiÃ¾im paketi
 Name:		@PACKAGE@
 Version:	@VERSION@
 Release:	1
 License:	GPLv2
-Group:		Applications/Communications
-Group(pl):	Aplikacje/Komunikacja
 URL:		https://salsa.debian.org/minicom-team/minicom
-Packager:	Daniel Tschan <tschan+rpm@devzone.ch>
 Source0:	%{name}-%{version}.tar.gz
 Buildroot:	%{_tmppath}/%{name}-root
 
@@ -28,29 +25,29 @@ It's recommended to install lrzsz if you want to transfer files
 with minicom.
 
 %description -l de
-Minicom ist ein Kommunikationsprogramm, das Ähnlichkeiten mit Telix
-unter MSDOS aufweist. Es enthält ein Wählverzeichnis, Farbe, vollständige ANSI-
+Minicom ist ein Kommunikationsprogramm, das Ã„hnlichkeiten mit Telix
+unter MSDOS aufweist. Es enthÃ¤lt ein WÃ¤hlverzeichnis, Farbe, vollstÃ¤ndige ANSI-
 und VT100-Emulation, eine (externe) Scriptsprache usw.
 
 %description -l fi
-Minicom on MSDOS-Telixiä jossain määrin muistuttava tietoliikenneohjelma.
-Ohjelmassa on mm. puhelinluettelo, värit, ANSI- ja VT100-emulaatiot
+Minicom on MSDOS-TelixiÃ¤ jossain mÃ¤Ã¤rin muistuttava tietoliikenneohjelma.
+Ohjelmassa on mm. puhelinluettelo, vÃ¤rit, ANSI- ja VT100-emulaatiot
 ja ulkoinen script-kieli.
 
 %description -l fr
-Minicom est un programme de communication ressemblant à Telix sous
-MSDOS. Il possède un répertoire de numérotation, un affichage en couleurs,
-des émulations ANSI et VT100, un langage de script externe...
+Minicom est un programme de communication ressemblant Ã  Telix sous
+MSDOS. Il possÃ¨de un rÃ©pertoire de numÃ©rotation, un affichage en couleurs,
+des Ã©mulations ANSI et VT100, un langage de script externe...
 
 %description -l pl
-Minicom jest programem komunikacyjnym, przypominaj±cym DOSowy program
-Telix. Posiada ksi±¿kê telefoniczn±, emulacjê terminali ANSI i VT100,
-zewnêtrzny jêzyk skryptowy, obs³ugê kolorów i wiele innych zalet.
+Minicom jest programem komunikacyjnym, przypominajÂ±cym DOSowy program
+Telix. Posiada ksiÂ±Â¿kÃª telefonicznÂ±, emulacjÃª terminali ANSI i VT100,
+zewnÃªtrzny jÃªzyk skryptowy, obsÂ³ugÃª kolorÃ³w i wiele innych zalet.
 
 %description -l tr
-Minicom, MSDOS Telix programýna benzeyen bir iletiþim programýdýr. Numara
-çevirme dizini, renk, tam ANSI uyumu ve VT100 öykünümü ile script gibi
-özellikleri vardýr.
+Minicom, MSDOS Telix programÃ½na benzeyen bir iletiÃ¾im programÃ½dÃ½r. Numara
+Ã§evirme dizini, renk, tam ANSI uyumu ve VT100 Ã¶ykÃ¼nÃ¼mÃ¼ ile script gibi
+Ã¶zellikleri vardÃ½r.
 
 %prep
 %setup -q
@@ -100,7 +97,7 @@ Revision 1.5  2000/06/16 09:27:23  misiek
 
 Revision 1.4  2000/03/27 00:29:37  gael
 - LINGUAS has to be unset to make rpm work
-- replaced --sysconf by --sysconfdir for %configure
+- replaced --sysconf by --sysconfdir for configure
 
 Revision 1.3  2000/02/09 22:37:28  gael
 - fixed typos in French description
@@ -119,7 +116,7 @@ Revision 1.15  1999/07/20 11:04:34  baggins
 
 Revision 1.14  1999/07/12 23:06:10  kloczek
 
-- added using CVS keywords in %changelog (for automating them).
+- added using CVS keywords in changelog (for automating them).
 
 
 * Tue Jun 29 1999 Michal Margula <alchemyx@pld.org.pl>
@@ -128,16 +125,16 @@ Revision 1.14  1999/07/12 23:06:10  kloczek
 - FHS 2.0 ready
 - minor fixes in spec
 
-* Wed Feb 03 1999 Arkadiusz Mi¶kiewicz <misiek@pld.org.pl>
+* Wed Feb 03 1999 Arkadiusz Mikiewicz <misiek@pld.org.pl>
   [1.82.1-1d]
 - new upstream release
 
-* Mon Jan 11 1999 Arkadiusz Mi¶kiewicz <misiek@pld.org.pl>
+* Mon Jan 11 1999 Arkadiusz Mikiewicz <misiek@pld.org.pl>
   [1.82-3d]
 - added 1.82.1 pre patch ;>
 - updated pl translation in this patch
 
-* Thu Dec 24 1998 Arkadiusz Mi¶kiewicz <misiek@pld.org.pl>
+* Thu Dec 24 1998 Arkadiusz Mikiewicz <misiek@pld.org.pl>
   [1.82-2d]
 - added defaul initstring,
 - added /etc/profile.d/minicom.sh,
@@ -151,7 +148,7 @@ Revision 1.14  1999/07/12 23:06:10  kloczek
 - allow building from non root account,
 - moved changelog to the end of spec.
 
-* Tue Jun 30 1998 Wojtek ¦lusarczyk <wojtek@shadow.eu.org>
+* Tue Jun 30 1998 Wojtek Å lusarczyk <wojtek@shadow.eu.org>
   [1.81-7d]
 - build against GNU libc-2.1.
 
