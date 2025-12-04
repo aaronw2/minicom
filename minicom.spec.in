@@ -54,6 +54,8 @@ Minicom, MSDOS Telix programýna benzeyen bir iletiþim programýdýr. Numara
 
 %prep
 %setup -q
+cd %{_builddir}/%{name}-%{version}
+/bin/sh ./autogen.sh
 
 %build
 %configure
