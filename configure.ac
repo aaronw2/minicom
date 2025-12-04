@@ -29,15 +29,6 @@ AM_ICONV_LINK
 
 PKG_PROG_PKG_CONFIG
 
-AC_ARG_ENABLE([lockdev],
-        AS_HELP_STRING([--enable-lockdev],
-                       [Enable lockdev support (def: enabled)]),
-        [], [enable_lockdev="yes"])
-
-if test -n "$PKG_CONFIG" && test "x$enable_lockdev" = xyes; then
-	PKG_CHECK_MODULES([LOCKDEV], [lockdev], AC_DEFINE([HAVE_LOCKDEV],[1],[Define if you have lockdev]),[:])
-fi
-
 AC_ARG_ENABLE([lock-dir],
 	AS_HELP_STRING([--enable-lock-dir=DIR],
 	               [Set com line lock directory (def: try common locations)]),
