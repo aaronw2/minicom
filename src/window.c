@@ -104,6 +104,7 @@ int useattr = 1;
 int dirflush = 1;
 int usecolor = 0;
 WIN *stdwin;
+int LINES, COLS;
 /*
  * The following is an external pointer to the termcap info.
  * If it's NOT zero then the main program has already
